@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:weightSum="4"
+    android:background="@color/black"
+    tools:context=".RunBlockingUsing">
+
+    <TextView
+        android:id="@+id/first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_weight="1"
+        android:textSize="@dimen/_30sdp"
+        android:textStyle="bold"
+        android:text="@string/first" />
+    <TextView
+        android:id="@+id/second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_30sdp"
+        android:textStyle="bold"
+        android:layout_weight="1"
+        android:text="@string/second" />
+    <TextView
+        android:id="@+id/third"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_weight="0"
+        android:textSize="@dimen/_30sdp"
+        android:textStyle="bold"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:text="@string/third" />
+    <Button
+        android:id="@+id/runByGlobalScope"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/runbyglobalscope" />
+    <Button
+        android:id="@+id/runByRunBlocking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/runbyrunblocking" />
+
+</LinearLayout>

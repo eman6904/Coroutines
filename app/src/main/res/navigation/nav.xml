@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/coroutinesImplement">
+
+    <fragment
+        android:id="@+id/coroutinesImplement"
+        android:name="com.example.coroutines.CoroutinesImplement"
+        android:label="fragment_coroutines_implement"
+        tools:layout="@layout/fragment_coroutines_implement" >
+        <action
+            android:id="@+id/action_coroutinesImplement_to_runBlockingUsing"
+            app:destination="@id/runBlockingUsing" />
+    </fragment>
+    <fragment
+        android:id="@+id/runBlockingUsing"
+        android:name="com.example.coroutines.RunBlockingUsing"
+        android:label="fragment_run_bloking_using"
+        tools:layout="@layout/fragment_run_bloking_using" />
+</navigation>
